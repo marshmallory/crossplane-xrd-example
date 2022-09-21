@@ -1,3 +1,0 @@
-- op: replace
-  path: /spec/resources/0/base/spec/forProvider/settings/dataDiskType
-  value: PD_HDD
