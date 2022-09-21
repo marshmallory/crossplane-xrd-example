@@ -1,0 +1,12 @@
+apiVersion: database.example.org.${feature}/v1alpha1
+kind: XPostgreSQLInstance
+metadata:
+  name: my-db
+spec:
+  parameters:
+    storageGB: 20
+  compositionRef:
+    name: production
+  writeConnectionSecretToRef:
+    namespace: crossplane-system
+    name: my-db-connection-details
